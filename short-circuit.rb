@@ -15,3 +15,8 @@ tweets = timeline.tweets
 tweets = [] unless tweets
 
 tweets = timeline.tweets || []         
+
+# if then/else is more readable in this case
+def sign_in
+  current_session || sign_user_in # not evaluated unless current session is nil
+end  
