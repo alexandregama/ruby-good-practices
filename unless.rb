@@ -11,7 +11,7 @@ unless tweets.empty
 end  
 
 # unless with else is confusing
-unless tweets.sempty
+unless tweets.empty
   puts "Timeline"
   puts tweets
 else

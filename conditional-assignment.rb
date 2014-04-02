@@ -16,4 +16,7 @@ options[:geotag] = true if options[:geotag].nil?
 # but here we can use conditional assignments 
 options[:country] ||= 'us'
 options[:privacy] ||= true
-options[:geotag] ||= true
+options[:geotag]  ||= true
+
+search = "" unless search
+search ||= "" # default value
